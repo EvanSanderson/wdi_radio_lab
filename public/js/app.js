@@ -20,17 +20,17 @@
         templateUrl: "js/index.html",
         controller: "wdiradioIndexController",
         controllerAs: "wdiradioIndexViewModel"
-      }).state("wdiradioShow", {
-        url: "/wdiradio/:id",
-        templateUrl: "js/show.html",
-        controller: "wdiradioShowController",
-        controllerAs: "wdiradioShowViewModel"
       }).state("wdiradioNew", {
         url: "/wdiradio/new",
         templateUrl: "js/new.html",
         controller: "wdiradioNewController",
         controllerAs: "wdiradioNewViewModel"
-      });
+      }).state("wdiradioShow", {
+        url: "/wdiradio/:id",
+        templateUrl: "js/show.html",
+        controller: "wdiradioShowController",
+        controllerAs: "wdiradioShowViewModel"
+      })
     }
 
 

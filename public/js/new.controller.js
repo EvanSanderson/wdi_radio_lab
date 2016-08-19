@@ -10,15 +10,11 @@
     ])
 
     function wdiradioNewControllerFunction( $firebaseArray, $state ){
+      console.log("Hi from new")
       var vm = this;
       var ref = firebase.database().ref().child("songs");
       vm.songs = $firebaseArray(ref);
 
-      vm.create = function(){
-        vm.songs.$add(vm.newSong).then(function(){
-          vm.newSong = {};
-          $state.go("wdiradioIndex")
-        })
-      }
+
     }
 })()
